@@ -1,0 +1,24 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "Integration Test",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DamianMoralesM/integrationTest.git"
+  },
+  "keywords": [
+    "test",
+    "integration",
+    "node"
+  ],
+  "author": "Damian Morales",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DamianMoralesM/integrationTest/issues"
+  },
+  "homepage": "https://github.com/DamianMoralesM/integrationTest#readme"
+}

@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/DamianMoralesM/integrationTest/issues"
   },
-  "homepage": "https://github.com/DamianMoralesM/integrationTest#readme"
+  "homepage": "https://github.com/DamianMoralesM/integrationTest#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
 }

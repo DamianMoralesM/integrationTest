@@ -2,3 +2,8 @@ language: node_js
 node_js:
    - "8.11"
   before_script: chmod 0777 ./node_modules/.bin/jshint
+  
+
+os:
+  - wirndows
+ 

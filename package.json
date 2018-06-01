@@ -4,7 +4,8 @@
   "description": "Integration Test",
   "main": "app.js",
   "scripts": {
-    "test": "./node_modules/.bin/jshint app.js"
+    "test": "node_modules/.bin jshint app.js"
+    
   },
   "repository": {
     "type": "git",

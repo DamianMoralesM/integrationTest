@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "Integration Test",
   "main": "app.js",
-  "scripts": {
-    "test": "jshint app.js"
-  },
+ 
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DamianMoralesM/integrationTest.git"

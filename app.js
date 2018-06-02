@@ -1,3 +1,4 @@
+/* 
 //Load HTTP module
 var http = require("http");
 
@@ -8,7 +9,7 @@ http.createServer(function (request, response) {
    response.writeHead(200, {'Content-Type': 'text/plain'});
    
    // Send the response body "Hello World"
-   response.end('Hello World')
+   response.end('Hello World');
 }).listen(5002);
 
 // Print URL for accessing server
@@ -16,3 +17,4 @@ console.log('Server running at http://127.0.0.1:8000/');
 
 
 
+*/

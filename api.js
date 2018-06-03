@@ -1,10 +1,10 @@
 const express = require('express');
 const app = express(); //this represent our aplication
 
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 8000);
 const port = app.get('port');
 app.use(express.json());
-const courses =[
+var courses =[
   {
      name:"English",
      id:1
@@ -17,7 +17,7 @@ const courses =[
      name:"Programing",
      id:3
   }
-]
+];
 
 //routes
 app.get('/', function(req, res) {
@@ -41,9 +41,30 @@ app.get('/', function(req, res) {
     courses.push(course);
     res.send(course);
     console.log(req.body);
-  })
+  });
+
+  app.update('/courses',function(req,res){ 
+    var course = courses.find( course => course.id === parseInt(req.params.id)); //find element
+    courses = courses.filter( elto => elto.id !== course.id );// elimino elemento
+    
+    //actualizo atributos
+    course.name = req.body.name;
+    //lo agrego
+    courses.push(course);
+    res.send(course);
+    console.log(req.body);
+  });
 
  
+ 
+  app.delete('/courses',function(req,res){
+    
+    courses = courses.filter( elto => elto.id !== course.id );// elimino elemento
+    res.send(courses);
+    console.log(req.body);
+  });
+
+  
 
   app.listen(port, function () {
     console.log('Example app listening on port '+ port);

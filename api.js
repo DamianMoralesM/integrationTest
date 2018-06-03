@@ -1,3 +1,4 @@
+/*
 const express = require('express');
 const app = express(); //this represent our aplication
 
@@ -43,7 +44,7 @@ app.get('/', function(req, res) {
     console.log(req.body);
   });
 
-  app.update('/courses',function(req,res){ 
+  app.put('/courses',function(req,res){ 
     var course = courses.find( course => course.id === parseInt(req.params.id)); //find element
     courses = courses.filter( elto => elto.id !== course.id );// elimino elemento
     
@@ -52,8 +53,7 @@ app.get('/', function(req, res) {
     //lo agrego
     courses.push(course);
     res.send(course);
-    console.log(req.body);
-  });
+    });
 
  
  
@@ -61,11 +61,11 @@ app.get('/', function(req, res) {
     
     courses = courses.filter( elto => elto.id !== course.id );// elimino elemento
     res.send(courses);
-    console.log(req.body);
-  });
+    });
 
   
 
   app.listen(port, function () {
     console.log('Example app listening on port '+ port);
   });
+  */

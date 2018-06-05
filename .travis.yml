@@ -7,6 +7,7 @@ before_install:
 before_script:
     - npm install
     - npm install -g jshint
+    npm install -g express
     - npm test 
 
 deploy:

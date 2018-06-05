@@ -1,9 +1,8 @@
-/*
+
 const express = require('express');
 const app = express(); //this represent our aplication
 
-app.set('port', process.env.PORT || 8000);
-const port = app.get('port');
+
 app.use(express.json());
 var courses =[
   {
@@ -65,7 +64,7 @@ app.get('/', function(req, res) {
 
   
 
-  app.listen(port, function () {
-    console.log('Example app listening on port '+ port);
+  app.listen(8000, function () {
+    console.log('Example app listening on port '+ 8000);
   });
-  */
+  

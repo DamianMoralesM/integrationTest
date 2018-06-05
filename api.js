@@ -1,7 +1,7 @@
-/*
+
 const express = require('express');
 const app = express(); //this represent our aplication
-
+var port = process.env.PORT || 8000;
 
 app.use(express.json());
 var courses =[
@@ -64,5 +64,5 @@ app.get('/', function(req, res) {
 
   
 
-    app.listen(3000);
-    */
+    app.listen(port);
+   

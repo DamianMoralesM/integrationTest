@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "Integration Test",
   "main": "api.js",
-  
-  
+  "scripts": {
+    "start": "node bin/www"
+  }
+  ,
   
   "repository": {
     "type": "git",

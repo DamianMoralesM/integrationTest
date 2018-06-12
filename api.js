@@ -17,12 +17,17 @@ var courses =[
      name:"Programing",
      id:3
   }
+  {
+    name:"Chemestry",
+    id:4
+ }
+
 ];
 
 //routes
 app.get('/', function(req, res) {
     res.type('text');
-    res.send('Hello World');
+    res.send('Hello World!!!');
   });
 
   app.get('/courses', function(req, res) {

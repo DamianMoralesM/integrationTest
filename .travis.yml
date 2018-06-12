@@ -1,7 +1,7 @@
 language: node_js
 node_js:
     - "8.11"
-script: jshint app.js
+script: jshint api.js
 before_install:
     - sh -e /etc/init.d/xvfb start
 before_script:

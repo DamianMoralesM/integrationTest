@@ -5,9 +5,7 @@
   "main": "api.js",
   "scripts": {
     "start": "node api.js"
-  }
-  ,
-  
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DamianMoralesM/integrationTest.git"
@@ -27,6 +25,7 @@
   "devDependencies": {
     "express": "^4.16.3",
     "jasmine": "^3.1.0",
-    "jshint": "^2.9.5"
+    "jshint": "^2.9.5",
+    "nodemon": "^1.17.5"
   }
 }

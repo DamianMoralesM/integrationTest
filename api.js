@@ -20,10 +20,6 @@ var courses =[
   {
     name:"Chemestry",
     id:4
- },
- {
-   name:"Sports",
-   id:5
  }
 
 ];

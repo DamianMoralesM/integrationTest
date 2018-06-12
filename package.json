@@ -2,9 +2,9 @@
   "name": "package",
   "version": "1.0.0",
   "description": "Integration Test",
-  "main": "api.js",
+  "main": "app.js",
   "scripts": {
-    "start": "node api.js"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",

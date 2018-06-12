@@ -16,7 +16,7 @@ var courses =[
   {
      name:"Programing",
      id:3
-  },
+  }
   {
     name:"Chemestry",
     id:4

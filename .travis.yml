@@ -17,5 +17,4 @@ deploy:
   username: "damianMorales"
   password: "Agilesapp2018"
   site: "agilesApp"
-  on:
-    tags: true
+  

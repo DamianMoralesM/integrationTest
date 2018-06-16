@@ -13,7 +13,5 @@ before_deploy: "echo 'ready?'"
 
 deploy:
   provider: azure_web_apps
-  username: damianMorales
-  password: Agilesapp2018
-  site: https://agilesapp.azurewebsites.net/
+  verbose: true
   

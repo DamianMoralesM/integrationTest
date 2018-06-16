@@ -11,6 +11,7 @@ before_script:
     - npm test 
 
 deploy:
+  skip_cleanup: true
   provider: azure_web_apps
   username: "damianMorales"
   password: "Agilesapp2018"

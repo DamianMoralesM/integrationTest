@@ -12,7 +12,6 @@ before_script:
 before_deploy: "echo 'ready?'"
 
 deploy:
-  skip_cleanup: true
   provider: azure_web_apps
   username: "damianMorales"
   password: "Agilesapp2018"

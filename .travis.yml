@@ -7,9 +7,9 @@ before_script:
     - npm install
     - npm install -g jshint
     - npm install -g express
+    - npm install -g firebase
     - npm test 
 
-deploy:
-  provider: azure_web_apps
-  verbose: true
+after_success:
+- firebase deploy --token "$FIREBASE_TOKEN"
   

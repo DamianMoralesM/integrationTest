@@ -1,5 +1,6 @@
-/*
+
 const express = require('express');
+const firebase = require("firebase");
 const app = express(); //this represent our aplication
 var port = process.env.PORT || 8000;
 
@@ -71,4 +72,4 @@ app.get('/', function(req, res) {
   
 
     app.listen(port);
-   */
+   

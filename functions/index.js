@@ -1,19 +1,18 @@
-//const functions = require('firebase-functions');
+const functions = require('firebase-functions');
+const express = require('express');
+const app = express();
 
 // // Create and Deploy Your First Cloud Functions
 // // https://firebase.google.com/docs/functions/write-firebase-functions
 //
-// exports.helloWorld = functions.https.onRequest((request, response) => {
-//  response.send("Hello from Firebase!");
-// });
+var engines = require('consolidate');
 
-const express = require('express');
+// Register '.mustache' extension with The Mustache Express
+app.engine('hbs', engines.handlebars);
 
-var functions = require('firebase-functions');
-const app = express(); //this represent our aplication
+app.set('views', './views');
+app.set('view engine', 'hbs');
 
-
-app.use(express.json());
 var courses =[
   {
      name:"English",
@@ -34,15 +33,21 @@ var courses =[
  
 
 ];
-
+var  persons = [    { "name": "Moe" },    { "name": "Larry" },    { "name": "Curly" }  ];
 
 
 
 
 //routes
-app.get('/', function(req, res) {
-    res.type('text');
-    res.send('Hello World!!!');
+app.get('/shop', function(req, res) {
+    
+    res.render('shop',{   "title": "false"  });
+  });
+
+  app.get('/test', function(req, res) {
+    
+    res.render('test', { "repo": [{"test": "Envio Incluido"}]} 
+  );
   });
 
   app.get('/courses', function(req, res) {
@@ -50,37 +55,4 @@ app.get('/', function(req, res) {
     res.send(courses);
   });
 
-  app.get('/courses/:id', function(req, res) {
-    res.type('application/json');
-    res.send(courses.find( course => course.id  === parseInt(req.params.id)));
-  
-  });
-
-  app.post('/courses',function(req,res){
-    var course = {name: req.body.name , id: courses.length + 1};
-    courses.push(course);
-    res.send(course);
-    console.log(req.body);
-  });
-
-  app.put('/courses',function(req,res){ 
-    var course = courses.find( course => course.id === parseInt(req.params.id)); //find element
-    courses = courses.filter( elto => elto.id !== course.id );// elimino elemento
-    
-    //actualizo atributos
-    course.name = req.body.name;
-    //lo agrego
-    courses.push(course);
-    res.send(course);
-    });
-
- 
- 
-  app.delete('/courses',function(req,res){
-    
-    courses = courses.filter( elto => elto.id !== course.id );// elimino elemento
-    res.send(courses);
-    });
-
-    exports.app = functions.https.onRequest(app);
-  
+   exports.app = functions.https.onRequest(app);

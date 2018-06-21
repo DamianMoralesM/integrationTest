@@ -74,7 +74,7 @@ app.get('/', function(req, res) {
     res.send(courses);
     });
 
-    exports.helloWorld  = functions.https.onRequest(app);
+    exports.app  = functions.https.onRequest(app);
   
 
     

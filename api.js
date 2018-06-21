@@ -1,6 +1,7 @@
 
 const express = require('express');
-const firebase = require("firebase");
+
+var functions = require('firebase-functions');
 const app = express(); //this represent our aplication
 var port = process.env.PORT || 8000;
 
@@ -25,6 +26,8 @@ var courses =[
  
 
 ];
+
+exports.widgets = functions.https.onRequest(app);
 
 //routes
 app.get('/', function(req, res) {

@@ -1,0 +1,32 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "Integration Test",
+  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DamianMoralesM/integrationTest.git"
+  },
+  "keywords": [
+    "test",
+    "integration",
+    "node"
+  ],
+  "author": "Damian Morales",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DamianMoralesM/integrationTest/issues"
+  },
+  "homepage": "https://github.com/DamianMoralesM/integrationTest#readme",
+  "dependencies": {
+    "firebase": "^5.0.4"
+  },
+  "devDependencies": {
+    "eslint-config-google": "^0.9.1",
+    "express": "^4.16.3",
+    "jasmine": "^3.1.0",
+    "jshint": "^2.9.5",
+    "mustache": "^2.3.0",
+    "nodemon": "^1.17.5"
+  }
+}

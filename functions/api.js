@@ -29,7 +29,7 @@ var courses =[
 
 
 
-exports.widgets = functions.https.onRequest(app);
+
 
 //routes
 app.get('/', function(req, res) {
@@ -74,6 +74,7 @@ app.get('/', function(req, res) {
     res.send(courses);
     });
 
+    exports.widgets = functions.https.onRequest(app);
   
 
     

@@ -1,4 +1,4 @@
-
+/*
 const express = require('express');
 
 var functions = require('firebase-functions');
@@ -74,8 +74,8 @@ app.get('/', function(req, res) {
     res.send(courses);
     });
 
-    exports.app  = functions.https.onRequest(app);
+    exports.app = functions.https.onRequest(app);
   
 
     
-   
+   */

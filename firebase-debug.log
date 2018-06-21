@@ -1,0 +1,27 @@
+[debug] [2018-06-21T04:09:32.605Z] ----------------------------------------------------------------------
+[debug] [2018-06-21T04:09:32.618Z] Command:       C:\nodejs\node.exe C:\Users\Usuario\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2018-06-21T04:09:32.619Z] CLI Version:   3.18.6
+[debug] [2018-06-21T04:09:32.619Z] Platform:      win32
+[debug] [2018-06-21T04:09:32.619Z] Node Version:  v8.11.2
+[debug] [2018-06-21T04:09:32.643Z] Time:          Thu Jun 21 2018 01:09:32 GMT-0300 (Hora estándar de Argentina)
+[debug] [2018-06-21T04:09:32.643Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-06-21T04:09:32.749Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-06-21T04:09:32.750Z] > authorizing via signed-in user
+[debug] [2018-06-21T04:09:32.753Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-06-21T04:09:32.754Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/DYzY_YGCQ6FUmuL8HVOwHKeZUWMl5bc-xgrC4kKSB3g',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Thu Jun 21 2018 01:09:32 GMT-0300 (Hora estándar de Argentina)
+[debug] [2018-06-21T04:09:33.446Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-21T04:09:33.524Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/agilesapp-bf9e7  
+  
+ Thu Jun 21 2018 01:09:33 GMT-0300 (Hora estándar de Argentina)
+[debug] [2018-06-21T04:09:34.813Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-21T04:09:34.814Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/agilesapp-bf9e7/tokens  
+  
+ Thu Jun 21 2018 01:09:34 GMT-0300 (Hora estándar de Argentina)
+[debug] [2018-06-21T04:09:35.579Z] <<< HTTP RESPONSE 200

@@ -41,7 +41,7 @@ var  persons = [    { "name": "Moe" },    { "name": "Larry" },    { "name": "Cur
 //routes
 app.get('/shop', function(req, res) {
     
-    res.render('shop',{   "title": "false"  });
+    res.render('shop',{   "title": "http://libu.s3.amazonaws.com/img/1026_9789871609789_alfa.jpg"  });
   });
 
   app.get('/test', function(req, res) {

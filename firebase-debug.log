@@ -55,3 +55,123 @@
 [info] [hosting] Rewriting /favicon.ico to local function app
 [info] [hosting] Rewriting /test to local function app
 [info] [hosting] Rewriting /test to local function app
+[debug] [2018-06-24T04:56:10.271Z] ----------------------------------------------------------------------
+[debug] [2018-06-24T04:56:10.297Z] Command:       C:\nodejs\node.exe C:\Users\Usuario\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-06-24T04:56:10.299Z] CLI Version:   3.18.6
+[debug] [2018-06-24T04:56:10.299Z] Platform:      win32
+[debug] [2018-06-24T04:56:10.299Z] Node Version:  v8.11.2
+[debug] [2018-06-24T04:56:10.300Z] Time:          Sun Jun 24 2018 01:56:10 GMT-0300 (Hora estándar de Argentina)
+[debug] [2018-06-24T04:56:10.300Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-06-24T04:56:10.414Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-06-24T04:56:10.416Z] > authorizing via signed-in user
+[debug] [2018-06-24T04:56:10.424Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-06-24T04:56:10.424Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/dfkPX8sNmf6wfIb6CupPKNVXTwtmcrwMwMy5SCRFjHQ9nloaxhxZgoDpZQPrnrJO',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Sun Jun 24 2018 01:56:10 GMT-0300 (Hora estándar de Argentina)
+[debug] [2018-06-24T04:56:11.451Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-24T04:56:11.513Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/agilesapp-bf9e7  
+  
+ Sun Jun 24 2018 01:56:11 GMT-0300 (Hora estándar de Argentina)
+[debug] [2018-06-24T04:56:12.894Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-24T04:56:12.896Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/agilesapp-bf9e7/tokens  
+  
+ Sun Jun 24 2018 01:56:12 GMT-0300 (Hora estándar de Argentina)
+[debug] [2018-06-24T04:56:13.693Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-24T04:56:13.696Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/agilesapp-bf9e7  
+  
+ Sun Jun 24 2018 01:56:13 GMT-0300 (Hora estándar de Argentina)
+[debug] [2018-06-24T04:56:14.869Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\nodejs\node_modules\app'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2018-06-24T04:56:31.259Z] Fetching environment
+[debug] [2018-06-24T04:56:31.275Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/799460737214:getServerAppConfig  
+  
+ Sun Jun 24 2018 01:56:31 GMT-0300 (Hora estándar de Argentina)
+[debug] [2018-06-24T04:56:31.281Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/799460737214/clients/_:getWebAppConfig  
+  
+ Sun Jun 24 2018 01:56:31 GMT-0300 (Hora estándar de Argentina)
+[debug] [2018-06-24T04:56:31.913Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-24T04:56:31.915Z] Starting @google-cloud/functions-emulator
+[debug] [2018-06-24T04:56:32.947Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+
+[debug] [2018-06-24T04:56:42.559Z] Parsing function triggers
+[info] [hosting] Rewriting /shop to local function app
+[info] +  functions: app: http://localhost:5001/agilesapp-bf9e7/us-central1/app
+[info] [hosting] Rewriting /favicon.ico to local function app
+[info] [hosting] Rewriting /shop to local function app
+[info] [hosting] Rewriting /shop to local function app
+[info] [hosting] Rewriting /shop to local function app
+[info] [hosting] Rewriting /shop to local function app
+[info] [hosting] Rewriting /shop to local function app
+[info] [hosting] Rewriting /shop to local function app
+[info] [hosting] Rewriting /shop to local function app
+[info] [hosting] Rewriting /shop to local function app
+[info] [hosting] Rewriting /shop to local function app
+[info] [hosting] Rewriting /shop to local function app
+[info] [hosting] Rewriting /shop to local function app
+[info] [hosting] Rewriting /shop to local function app
+[info] [hosting] Rewriting /shop to local function app
+[info] [hosting] Rewriting /shop to local function app
+[info] [hosting] Rewriting /shop to local function app
+[debug] [2018-06-24T05:23:16.353Z] ----------------------------------------------------------------------
+[debug] [2018-06-24T05:23:16.357Z] Command:       C:\nodejs\node.exe C:\Users\Usuario\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-06-24T05:23:16.357Z] CLI Version:   3.18.6
+[debug] [2018-06-24T05:23:16.357Z] Platform:      win32
+[debug] [2018-06-24T05:23:16.357Z] Node Version:  v8.11.2
+[debug] [2018-06-24T05:23:16.358Z] Time:          Sun Jun 24 2018 02:23:16 GMT-0300 (Hora estándar de Argentina)
+[debug] [2018-06-24T05:23:16.358Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-06-24T05:23:16.368Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-06-24T05:23:16.368Z] > authorizing via signed-in user
+[debug] [2018-06-24T05:23:16.368Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/agilesapp-bf9e7  
+  
+ Sun Jun 24 2018 02:23:16 GMT-0300 (Hora estándar de Argentina)
+[debug] [2018-06-24T05:23:17.633Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-24T05:23:17.634Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/agilesapp-bf9e7/tokens  
+  
+ Sun Jun 24 2018 02:23:17 GMT-0300 (Hora estándar de Argentina)
+[debug] [2018-06-24T05:23:18.428Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-24T05:23:18.429Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/agilesapp-bf9e7  
+  
+ Sun Jun 24 2018 02:23:18 GMT-0300 (Hora estándar de Argentina)
+[debug] [2018-06-24T05:23:19.580Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\nodejs\node_modules\app'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2018-06-24T05:23:22.269Z] Fetching environment
+[debug] [2018-06-24T05:23:22.279Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/799460737214:getServerAppConfig  
+  
+ Sun Jun 24 2018 02:23:22 GMT-0300 (Hora estándar de Argentina)
+[debug] [2018-06-24T05:23:22.281Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/799460737214/clients/_:getWebAppConfig  
+  
+ Sun Jun 24 2018 02:23:22 GMT-0300 (Hora estándar de Argentina)
+[debug] [2018-06-24T05:23:22.886Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-24T05:23:22.887Z] Starting @google-cloud/functions-emulator
+[debug] [2018-06-24T05:23:23.730Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+
+[info] [hosting] Rewriting /shop to local function app
+[debug] [2018-06-24T05:23:27.263Z] Parsing function triggers
+[info] +  functions: app: http://localhost:5001/agilesapp-bf9e7/us-central1/app
+[info] [hosting] Rewriting /shop to local function app
+[info] [hosting] Rewriting /shop to local function app
+[info] [hosting] Rewriting /shop to local function app
+[info] [hosting] Rewriting /shop to local function app
+[info] [hosting] Rewriting /shop to local function app
+[info] [hosting] Rewriting /shop to local function app
+[info] [hosting] Rewriting /shop to local function app
+[info] [hosting] Rewriting /shop to local function app
+[info] [hosting] Rewriting /shop to local function app
+[info] [hosting] Rewriting /shop to local function app
+[info] [hosting] Rewriting /shop to local function app

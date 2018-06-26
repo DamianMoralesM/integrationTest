@@ -11,8 +11,6 @@ before_script:
     - npm install -g firebase-tools
     - npm test 
 
-#after_success:
-#- firebase deploy --token 
 
 notifications:
     slack: teamware2018:sB65u93u9kXQAEKzvKbzpnsx

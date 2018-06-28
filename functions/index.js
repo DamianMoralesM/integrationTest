@@ -7,6 +7,8 @@ const app = express();
 //
 var engines = require('consolidate');
 
+
+
 // Register '.mustache' extension with The Mustache Express
 app.engine('hbs', engines.handlebars);
 

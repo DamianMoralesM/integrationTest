@@ -1,7 +1,7 @@
 language: node_js
 node_js:
     - "8.11"
-#script: jshint app.js
+script: jshint functions/index.js
 
 before_script:
     - npm install
@@ -12,8 +12,7 @@ before_script:
     - npm test 
 
 
-notifications:
-    slack: teamware2018:sB65u93u9kXQAEKzvKbzpnsx
+
 deploy:
   provider: firebase
   token:

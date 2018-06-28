@@ -134,3 +134,99 @@
 [debug] [2018-06-28T15:14:51.033Z] Parsing function triggers
 [info] +  functions: app: http://localhost:5001/agilesapp-bf9e7/us-central1/app
 [info] [hosting] Rewriting /shop to local function app
+[debug] [2018-06-28T15:58:18.883Z] ----------------------------------------------------------------------
+[debug] [2018-06-28T15:58:18.914Z] Command:       C:\nodejs\node.exe C:\Users\Usuario\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve --only functions,hosting
+[debug] [2018-06-28T15:58:18.914Z] CLI Version:   3.18.6
+[debug] [2018-06-28T15:58:18.915Z] Platform:      win32
+[debug] [2018-06-28T15:58:18.915Z] Node Version:  v8.11.2
+[debug] [2018-06-28T15:58:18.939Z] Time:          Thu Jun 28 2018 12:58:18 GMT-0300 (Hora estándar de Argentina)
+[debug] [2018-06-28T15:58:18.939Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-06-28T15:58:19.008Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-06-28T15:58:19.010Z] > authorizing via signed-in user
+[debug] [2018-06-28T15:58:19.017Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-06-28T15:58:19.017Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/dfkPX8sNmf6wfIb6CupPKNVXTwtmcrwMwMy5SCRFjHQ9nloaxhxZgoDpZQPrnrJO',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Thu Jun 28 2018 12:58:19 GMT-0300 (Hora estándar de Argentina)
+[debug] [2018-06-28T15:58:19.757Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-28T15:58:21.072Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/agilesapp-bf9e7  
+  
+ Thu Jun 28 2018 12:58:21 GMT-0300 (Hora estándar de Argentina)
+[debug] [2018-06-28T15:58:22.512Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-28T15:58:22.514Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/agilesapp-bf9e7/tokens  
+  
+ Thu Jun 28 2018 12:58:22 GMT-0300 (Hora estándar de Argentina)
+[debug] [2018-06-28T15:58:23.356Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-28T15:58:23.358Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/agilesapp-bf9e7  
+  
+ Thu Jun 28 2018 12:58:23 GMT-0300 (Hora estándar de Argentina)
+[debug] [2018-06-28T15:58:24.665Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\nodejs\node_modules\app'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2018-06-28T15:58:36.295Z] Fetching environment
+[debug] [2018-06-28T15:58:36.311Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/799460737214:getServerAppConfig  
+  
+ Thu Jun 28 2018 12:58:36 GMT-0300 (Hora estándar de Argentina)
+[debug] [2018-06-28T15:58:36.318Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/799460737214/clients/_:getWebAppConfig  
+  
+ Thu Jun 28 2018 12:58:36 GMT-0300 (Hora estándar de Argentina)
+[debug] [2018-06-28T15:58:37.024Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-28T15:58:38.170Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-28T15:58:38.172Z] Starting @google-cloud/functions-emulator
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+
+[debug] [2018-06-28T15:58:48.975Z] Parsing function triggers
+[info] +  functions: app: http://localhost:5001/agilesapp-bf9e7/us-central1/app
+[info] [hosting] Rewriting /shop to local function app
+[info] [hosting] Rewriting /shop to local function app
+[info] [hosting] Rewriting /shop to local function app
+[info] [hosting] Rewriting /shop to local function app
+[debug] [2018-06-28T16:21:50.931Z] ----------------------------------------------------------------------
+[debug] [2018-06-28T16:21:50.976Z] Command:       C:\nodejs\node.exe C:\Users\Usuario\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve --only functions,hosting
+[debug] [2018-06-28T16:21:50.978Z] CLI Version:   3.18.6
+[debug] [2018-06-28T16:21:50.978Z] Platform:      win32
+[debug] [2018-06-28T16:21:50.979Z] Node Version:  v8.11.2
+[debug] [2018-06-28T16:21:51.021Z] Time:          Thu Jun 28 2018 13:21:50 GMT-0300 (Hora estándar de Argentina)
+[debug] [2018-06-28T16:21:51.021Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-06-28T16:21:51.176Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-06-28T16:21:51.177Z] > authorizing via signed-in user
+[debug] [2018-06-28T16:21:51.183Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/agilesapp-bf9e7  
+  
+ Thu Jun 28 2018 13:21:51 GMT-0300 (Hora estándar de Argentina)
+[debug] [2018-06-28T16:21:52.840Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-28T16:21:52.844Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/agilesapp-bf9e7/tokens  
+  
+ Thu Jun 28 2018 13:21:52 GMT-0300 (Hora estándar de Argentina)
+[debug] [2018-06-28T16:21:53.721Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-28T16:21:53.724Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/agilesapp-bf9e7  
+  
+ Thu Jun 28 2018 13:21:53 GMT-0300 (Hora estándar de Argentina)
+[debug] [2018-06-28T16:21:54.863Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\nodejs\node_modules\app'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2018-06-28T16:22:06.707Z] Fetching environment
+[debug] [2018-06-28T16:22:06.729Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/799460737214:getServerAppConfig  
+  
+ Thu Jun 28 2018 13:22:06 GMT-0300 (Hora estándar de Argentina)
+[debug] [2018-06-28T16:22:06.731Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/799460737214/clients/_:getWebAppConfig  
+  
+ Thu Jun 28 2018 13:22:06 GMT-0300 (Hora estándar de Argentina)
+[debug] [2018-06-28T16:22:07.263Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-28T16:22:08.298Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-28T16:22:08.299Z] Starting @google-cloud/functions-emulator
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+
+[debug] [2018-06-28T16:22:19.196Z] Parsing function triggers
+[info] +  functions: app: http://localhost:5001/agilesapp-bf9e7/us-central1/app
+[info] [hosting] Rewriting /shop to local function app

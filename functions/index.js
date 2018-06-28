@@ -1,6 +1,6 @@
-const functions = require('firebase-functions');
-const express = require('express');
-const app = express();
+var  functions = require('firebase-functions');
+var express = require('express');
+var app = express();
 
 // // Create and Deploy Your First Cloud Functions
 // // https://firebase.google.com/docs/functions/write-firebase-functions
@@ -35,7 +35,7 @@ var courses =[
  
 
 ];
-var  persons = [    { "name": "Moe" },    { "name": "Larry" },    { "name": "Curly" }  ];
+
 
 
 

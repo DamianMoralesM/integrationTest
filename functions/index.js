@@ -1,6 +1,6 @@
 var  functions = require('firebase-functions');
 var express = require('express');
-var app = express();;
+var app = express();
 
 // // Create and Deploy Your First Cloud Functions
 // // https://firebase.google.com/docs/functions/write-firebase-functions

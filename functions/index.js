@@ -48,9 +48,14 @@ app.get('/shop', function(req, res) {
 
   app.get('/test', function(req, res) {
     
-    res.render('test', { "repo": [{"test": "Envio Incluido"}]} 
-  );
+    res.render('test');
   });
+  app.get('/vote', function(req, res) {
+    
+    res.render('vote'); 
+  
+  });
+
 
   app.get('/courses', function(req, res) {
     res.type('application/json');

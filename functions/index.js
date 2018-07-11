@@ -1,14 +1,24 @@
+const firebase = require('firebase');
+
 var  functions = require('firebase-functions');
 var express = require('express');
 var app = express();
-
-// // Create and Deploy Your First Cloud Functions
-// // https://firebase.google.com/docs/functions/write-firebase-functions
-//
 var engines = require('consolidate');
 
 
 
+/*
+
+db.collection('rubros').get()
+    .then((comparsa) => {
+      comparsa.forEach((doc) => {
+        console.log(doc.id, '=>', doc.data());
+      });
+    })
+    .catch((err) => {
+      console.log('Error getting documents', err);
+    });
+*/
 // Register '.mustache' extension with The Mustache Express
 app.engine('hbs', engines.handlebars);
 

@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/DamianMoralesM/integrationTest#readme",
   "dependencies": {
+    "@google-cloud/firestore": "^0.14.1",
     "firebase": "^5.0.4"
   },
   "devDependencies": {

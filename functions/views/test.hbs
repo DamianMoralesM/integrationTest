@@ -2,19 +2,103 @@
 <html lang="en-us">
 	<head>
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
-		<title>{{title}}</title>
+		<title></title>
 	</head>
 	<body>
-		Agregando feature 1
-		{{#persons}}
-			<b>{{name}}</b>
-			{{/persons}}
+	<div id="app-4">
+  <ul>
+    <li v-for="comparsa of comparsas">
+            \{{ comparsa.text }}
+    </li>
+  </ul>
 
-			{{#repo}}
-  <b>{{test}}</b>
-{{/repo}}
-{{^repo}}
-  No repos :(
-{{/repo}}
+
+  
+</div>
+</div>
+
+
+
+	<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>	
+
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAoCjAzSrabZ5iR4d-zMaJNBlGL_5K8WXw",
+    authDomain: "agilesapp-bf9e7.firebaseapp.com",
+    databaseURL: "https://agilesapp-bf9e7.firebaseio.com",
+    projectId: "agilesapp-bf9e7",
+    storageBucket: "agilesapp-bf9e7.appspot.com",
+    messagingSenderId: "799460737214"
+  };
+  firebase.initializeApp(config);
+	var db = firebase.firestore();
+    db.settings({ timestampsInSnapshots: true }); 
+
+ var comparsas = 	db.collection('rubros').get()
+    .then((comparsa) => {
+      comparsa.forEach((doc) => {
+        console.log(doc.id, '=>', doc.data());
+      });
+    })
+    .catch((err) => {
+      console.log('Error getting documents', err);
+    });
+
+	 function test (){ 
+		db.collection('votos').add({
+					usuario: 4,
+					fecha: "",
+					rubros: {
+						bateria: "La nueva",
+						comparsa: "Samberos",
+						reina: "Nar"
+
+
+					}
+
+			});
+	console.log("works");
+	}
+
+	
+</script>
+
+
+<!-- development version, includes helpful console warnings -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+var app4 = new Vue({
+  el: '#app-4',
+  data: {
+    
+    comparsas: [
+      { text: 'Bahia', nro: 1   },
+      { text: 'Hawaianas', nro: 2   },
+      { text: 'La Nueva', nro: 3  },
+      { text: 'Samberos', nro: 4  },
+      { text: 'Ara Sunu', nro: 5  }
+    ],
+    reinas: [
+      { text: 'reina1', nro: 6 },
+      { text: 'reina2', nro: 7 },
+      { text: 'reina3', nro: 8 },
+      { text: 'reina4', nro: 9 },
+      { text: 'reina5', nro: 10 }
+    ],
+    baterias: [
+      { text: 'Bahia' , nro: 11    },
+      { text: 'Hawaianas', nro: 12  },
+      { text: 'La Nueva', nro: 13  },
+      { text: 'Samberos', nro: 14  },
+      { text: 'Ara Sunu', nro: 15  }
+    ]
+  
+  }
+})
+
+</script>
+
 	</body>
 </html>

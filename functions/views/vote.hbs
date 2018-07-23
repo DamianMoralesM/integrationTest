@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
   <head>
 
@@ -9,14 +9,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Shop Homepage - Start Bootstrap Template</title>
+    <title>Votá tu Comparsa!</title>
     
 
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.cyan-orange.min.css" />
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.cyan-orange.min.css" />
 
 
     
@@ -29,25 +29,19 @@
   <header class="mdl-layout__header">
     <div class="mdl-layout__header-row">
       <!-- Title -->
-      <span class="mdl-layout-title">Title</span>
+      <span class="mdl-layout-title">Votá tu Comparsa!</span>
       <!-- Add spacer, to align navigation to the right -->
       <div class="mdl-layout-spacer"></div>
       <!-- Navigation. We hide it in small screens. -->
       <nav class="mdl-navigation mdl-layout--large-screen-only">
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
+       
       </nav>
     </div>
   </header>
   <div class="mdl-layout__drawer">
-    <span class="mdl-layout-title">Title</span>
+    <span class="mdl-layout-title">Votá tu Comparsa!</span>
     <nav class="mdl-navigation">
-      <a class="mdl-navigation__link" href="">Link</a>
-      <a class="mdl-navigation__link" href="">Link</a>
-      <a class="mdl-navigation__link" href="">Link</a>
-      <a class="mdl-navigation__link" href="">Link</a>
+    
     </nav>
   </div>
   <main >
@@ -67,7 +61,7 @@
                     <span>\{{comparsa.text}}</span>
                     </span>
 				    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" :for="'option-' + comparsa.nro">
-					  <input type="radio" :id="'option-' + comparsa.nro" class="mdl-radio__button" name="comparsa" :value="comparsa.nro">
+					  <input type="radio" :id="'option-' + comparsa.nro" class="mdl-radio__button" name="comparsa" :value="comparsa.text">
 				  		
 						</label>
 
@@ -86,7 +80,7 @@
 											<span>\{{reina.text}}</span>
 											</span>
 							<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" :for="'option-' + reina.nro">
-							<input type="radio" :id="'option-' + reina.nro" class="mdl-radio__button" name="reina" :value="reina.nro">
+							<input type="radio" :id="'option-' + reina.nro" class="mdl-radio__button" name="reina" :value="reina.text">
 							</label>
 
 							</li>
@@ -103,7 +97,7 @@
                     <span>\{{bateria.text}}</span>
                     </span>
 				    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" :for="'option-' + bateria.nro">
-					  <input type="radio" :id="'option-' + bateria.nro" class="mdl-radio__button" name="bateria" :value="bateria.nro">
+					  <input type="radio" :id="'option-' + bateria.nro" class="mdl-radio__button" name="bateria" :value="bateria.text">
 				  	</label>
 				  </li>
 
@@ -168,20 +162,20 @@
 			methods: {
 				votar : function(){
 				const entradas =	document.getElementsByTagName("input");
-				var comp, bat , rei; 
+				var comp, bat , rei ; 
 				for (i=0; i< entradas.length - 1; i++) {
 
 					if (entradas[i].checked ){
-						
+					
 						switch(entradas[i].getAttribute("name")) {
 							case "comparsa":
-									comp = parseInt(entradas[i].value);
+									comp =  entradas[i].value;
 									
 							case "reina":
-									rei = parseInt(entradas[i].value);
+									rei = entradas[i].value;
 									
 							case "bateria":
-									bat = parseInt(entradas[i].value);
+									bat = entradas[i].value;
 							}
 
 					}
@@ -196,25 +190,27 @@
 							storageBucket: "agilesapp-bf9e7.appspot.com",
 							messagingSenderId: "799460737214"
 						};  
-					console.log(comp,bat,rei, this.comparsas[0].text);
-					console.log(document.getElementsByTagName("input")[0].checked );	
+				
+					console.log(comp,bat, rei);
+				
 					firebase.initializeApp(config);
 					var db = firebase.firestore();
    				db.settings({ timestampsInSnapshots: true }); 
 
-				 function test (){	db.collection('votos').add({
-					usuario: 8,
-					fecha: "",
-					rubros: {
-						bateria: this.baterias[bat].text,
-						comparsa: this.comparsas[comp].text,
-						reina: this.reinas[rei].text
+				 
+					 db.collection('votos').add({
+								usuario: 12,
+								fecha: "",
+								rubros: {
+									bateria: bat,
+									comparsa: comp,
+									reina: rei
 
-				}
-					})
-					console.log("works");
-				}
-				test();
+									}
+						})
+				
+				
+				
 				}
 			}			
 		})

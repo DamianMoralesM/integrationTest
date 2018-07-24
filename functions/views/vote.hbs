@@ -47,13 +47,14 @@
   <main >
     <div ><!-- Your content goes here -->
         <div class="container"  id="app-4">
-
+				<form method="POST" action="/votes">
           
 
 
   <div class="row">
-  	
+	
   		<div class="col-md-4"> 
+					
   			<ul class="demo-list-item mdl-list" v-for="comparsa of comparsas">
 				    <li class="mdl-list__item">
                      <span class="mdl-list__item-primary-content">
@@ -107,9 +108,10 @@
 
   </div>
 
-    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent center btn-block" v-on:click="votar">
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent center btn-block"  type="submit">
   Votar ! 
 </button>
+</form>
       </div>
     
     
@@ -182,34 +184,7 @@
 
 				
 				}
-				var config = {
-							apiKey: "AIzaSyAoCjAzSrabZ5iR4d-zMaJNBlGL_5K8WXw",
-							authDomain: "agilesapp-bf9e7.firebaseapp.com",
-							databaseURL: "https://agilesapp-bf9e7.firebaseio.com",
-							projectId: "agilesapp-bf9e7",
-							storageBucket: "agilesapp-bf9e7.appspot.com",
-							messagingSenderId: "799460737214"
-						};  
-				
-					console.log(comp,bat, rei);
-				
-					firebase.initializeApp(config);
-					var db = firebase.firestore();
-   				db.settings({ timestampsInSnapshots: true }); 
-
-				 
-					 db.collection('votos').add({
-								usuario: 12,
-								fecha: "",
-								rubros: {
-									bateria: bat,
-									comparsa: comp,
-									reina: rei
-
-									}
-						})
-				
-				
+					
 				
 				}
 			}			

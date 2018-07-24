@@ -41,7 +41,7 @@ const firebaseapp = firebase.initializeApp(config)
 */
 
 
-
+/* consulta
 db.collection('votos').get()
     .then((votos) => {
       votos.forEach((doc) => {
@@ -51,7 +51,7 @@ db.collection('votos').get()
     .catch((err) => {
       console.log('Error getting documents', err);
     });
-
+*/
 // Register '.mustache' extension with The Mustache Express
 app.engine('hbs', engines.handlebars);
 
@@ -103,6 +103,21 @@ app.get('/shop', function(req, res) {
   app.get('/courses', function(req, res) {
     res.type('application/json');
     res.send(courses);
+  });
+
+  app.post('/votes' , function(req, res){
+    
+    db.collection('votos').add({
+      usuario: 14,
+      fecha: "",
+      rubros: {
+        bateria: req.body.bateria,
+        comparsa: req.body.comparsa,
+        reina: req.body.reina
+
+        }
+  });
+  res.send('Tu voto fue ' + ' bateria: ' + req.body.bateria +' comparsa:' +  req.body.comparsa +' reina: '+ req.body.reina);
   });
 
    exports.app = functions.https.onRequest(app);

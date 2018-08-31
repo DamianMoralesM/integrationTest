@@ -108,9 +108,11 @@ app.get('/shop', function(req, res) {
   app.get('/login', function(req, res) {
     res.render('login'); 
   });
+
  app.get('/dashboard', function(req, res) {
     res.render('dashboard'); 
   });
+  
   app.post('/votes' , function(req, res){
     
     db.collection('votos').add({

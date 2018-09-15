@@ -10,7 +10,52 @@
     <meta name="author" content="">
 
     <title>Votá tu Comparsa!</title>
-    
+     <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase.js"></script> 
+  <script>
+  
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAoCjAzSrabZ5iR4d-zMaJNBlGL_5K8WXw",
+    authDomain: "agilesapp-bf9e7.firebaseapp.com",
+    databaseURL: "https://agilesapp-bf9e7.firebaseio.com",
+    projectId: "agilesapp-bf9e7",
+    storageBucket: "agilesapp-bf9e7.appspot.com",
+    messagingSenderId: "799460737214"
+  };
+  firebase.initializeApp(config); 
+</script>
+  <script>
+     function initApp() {
+      // Listening for auth state changes.
+      // [START authstatelistener]
+      firebase.auth().onAuthStateChanged(function(user) {
+        if (user) {
+          // User is signed in.
+          
+          var displayName = user.displayName;
+          var email = user.email;
+          var emailVerified = user.emailVerified;
+          var photoURL = user.photoURL;
+          var isAnonymous = user.isAnonymous;
+          var uid = user.uid;
+          var providerData = user.providerData;
+          // [START_EXCLUDE]
+          document.getElementById('usuario').value = email;
+        
+          // [END_EXCLUDE]
+        } else {
+          // User is signed out.
+          // [START_EXCLUDE]
+          document.getElementById('quickstart-sign-in-status').textContent = 'Signed out';
+          document.getElementById('quickstart-account-details').textContent = 'null';
+          // [END_EXCLUDE]
+        }
+      });
+      // [END authstatelistener]
+    }
+
+    initApp();
+  </script>
 
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -54,7 +99,7 @@
 
 
   <div class="row">
-	
+			 <input type="hidden" id="usuario" name="usuario" value="">
   		<div class="col-md-4"> 
 					<h3>Comparsas</h3><hr>
   			<ul class="demo-list-item mdl-list" v-for="comparsa of comparsas" >

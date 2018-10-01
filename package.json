@@ -19,7 +19,8 @@
   "homepage": "https://github.com/DamianMoralesM/integrationTest#readme",
   "dependencies": {
     "@google-cloud/firestore": "^0.14.1",
-    "firebase": "^5.0.4"
+    "firebase": "^5.0.4",
+    "passport": "^0.4.0"
   },
   "devDependencies": {
     "eslint-config-google": "^0.9.1",

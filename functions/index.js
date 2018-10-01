@@ -1,10 +1,12 @@
  
 const firebase = require('firebase');
+const passport = require('c:/nodejs/node_modules/app/functions/node_modules/passport');
+const FacebookStrategy = require('c:/nodejs/node_modules/app/functions/node_modules/passport-facebook').Strategy;
 
 
-  const admin = require('firebase-admin');
-  const functions = require('firebase-functions');
-  var serviceAccount = {
+const admin = require('firebase-admin');
+const functions = require('firebase-functions');
+var serviceAccount = {
     "type": "service_account",
     "project_id": "agilesapp-bf9e7",
     "private_key_id": "3f06613baf5276665fb3360206894fcc6520bddc",
@@ -57,8 +59,23 @@ var courses =[
 ];
 
 
+passport.use(new FacebookStrategy({
+  clientID: '516145145497747',
+  clientSecret: '5a9892cfdbfa2fef09f7b748032939cf',
+  callbackURL: "https://agilesapp-bf9e7.firebaseapp.com/auth/facebook/callback"},
+function(accessToken, refreshToken, profile, cb) {
+console.log(accessToken, refreshToken, profile, cb)
+}
+));
 
 
+app.get('/auth/facebook', passport.authenticate('facebook'));
+
+app.get('/auth/facebook/callback',  passport.authenticate('facebook', { failureRedirect: 'login.hbs' }),
+  function(req, res) {
+    // Successful authentication, redirect home.
+    res.redirect('dashboard.hbs');
+  });
 
 //routes
 app.get('/shop', function(req, res) {

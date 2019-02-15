@@ -1,65 +1,281 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/5.0.4/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/5.0.4/firebase-auth.js"></script>
-    <script defer src="/__/firebase/5.0.4/firebase-database.js"></script>
-    <script defer src="/__/firebase/5.0.4/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/5.0.4/firebase-storage.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+    <!-- Title -->
+    <title> Carnavales Villa Ángela</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+   
+
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+        <!-- Navbar Area -->
+        <div class="oneMusic-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class=" classy-navbar justify-content-between" id="oneMusicNav">
 
-        try {
-          let app = firebase.app();
-          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
-          document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+                      
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="index.html">Inicio</a></li>
+                                    <li><a href="comparseros">Comparseras</a></li>
+                                    <li onclick="dejarVotar()"><a href="#" >Votá Tu Comparsa</a></li>
+                                    <li><a href="event.html">Noticias</a></li>
+                                    
+                                    <li><a href="contact.html">Info</a></li>
+                                </ul>
+
+                                <!-- Login/Register & Cart Button -->
+                                <div class="d-flex align-items-center">
+                                    <!-- Login/Register -->
+                                   
+
+                                   
+                                </div>
+                            </div>
+                            <!-- Nav End -->
+
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <!-- ##### Hero Area Start ##### -->
+    <section class="hero-area">
+        <div class="hero-slides owl-carousel">
+            <!-- Single Hero Slide -->
+            <div class="single-hero-slide d-flex align-items-center justify-content-center">
+                <!-- Slide Img -->
+                <div class="slide-img bg-img" style="background-image: url(img/bg-img/bg-1.jpg);"></div>
+                <!-- Slide Content -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="hero-slides-content text-center">
+                                <h2 data-animation="fadeInUp" data-delay="300ms">Carnavales Villa Ángela <span>Carnavales Villa Ángela</span></h2>
+                                <h6 data-animation="fadeInUp" data-delay="100ms">2019</h6>
+                                <a data-animation="fadeInUp" data-delay="500ms" href="#" class="btn oneMusic-btn mt-50">Mas Info <i class="fa fa-angle-double-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Hero Slide -->
+            <div class="single-hero-slide d-flex align-items-center justify-content-center">
+                <!-- Slide Img -->
+                <div class="slide-img bg-img" style="background-image: url(img/bg-img/bg-2.jpg);"></div>
+                <!-- Slide Content -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="hero-slides-content text-center">
+                                
+                                <h2 data-animation="fadeInUp" data-delay="300ms">Carnavales Villa Ángela <span>Carnavales Villa Ángela</span></h2>
+                                <h6 data-animation="fadeInUp" data-delay="100ms">2019</h6>
+                                <a data-animation="fadeInUp" data-delay="500ms" href="#" class="btn oneMusic-btn mt-50">Mas Info <i class="fa fa-angle-double-right"></i></a>
+                           
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Hero Area End ##### -->
+
+    <!-- ##### Latest Albums Area Start ##### -->
+    <section class="latest-albums-area section-padding-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading style-2">
+                       
+                        <h2>Sponsors del Sitio:</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-9">
+                    <div class="ablums-text text-center mb-70">
+                        <p>Nam tristique ex vel magna tincidunt, ut porta nisl finibus. Vivamus eu dolor eu quam varius rutrum. Fusce nec justo id sem aliquam fringilla nec non lacus. Suspendisse eget lobortis nisi, ac cursus odio. Vivamus nibh velit, rutrum at ipsum ac, dignissim iaculis ante. Donec in velit non elit pulvinar pellentesque et non eros.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="albums-slideshow owl-carousel">
+                        <!-- Single Album -->
+                        <div class="single-album">
+                            <img src="img/bg-img/a1.jpg" alt="">
+                            <div class="album-info">
+                                <a href="#">
+                                    <h5>The Cure</h5>
+                                </a>
+                                <p>Second Song</p>
+                            </div>
+                        </div>
+
+                        <!-- Single Album -->
+                        <div class="single-album">
+                            <img src="img/bg-img/a2.jpg" alt="">
+                            <div class="album-info">
+                                <a href="#">
+                                    <h5>Sam Smith</h5>
+                                </a>
+                                <p>Underground</p>
+                            </div>
+                        </div>
+
+                        <!-- Single Album -->
+                        <div class="single-album">
+                            <img src="img/bg-img/a3.jpg" alt="">
+                            <div class="album-info">
+                                <a href="#">
+                                    <h5>Will I am</h5>
+                                </a>
+                                <p>First</p>
+                            </div>
+                        </div>
+
+                        <!-- Single Album -->
+                        <div class="single-album">
+                            <img src="img/bg-img/a4.jpg" alt="">
+                            <div class="album-info">
+                                <a href="#">
+                                    <h5>The Cure</h5>
+                                </a>
+                                <p>Second Song</p>
+                            </div>
+                        </div>
+
+                        <!-- Single Album -->
+                        <div class="single-album">
+                            <img src="img/bg-img/a5.jpg" alt="">
+                            <div class="album-info">
+                                <a href="#">
+                                    <h5>DJ SMITH</h5>
+                                </a>
+                                <p>The Album</p>
+                            </div>
+                        </div>
+
+                        <!-- Single Album -->
+                        <div class="single-album">
+                            <img src="img/bg-img/a6.jpg" alt="">
+                            <div class="album-info">
+                                <a href="#">
+                                    <h5>The Ustopable</h5>
+                                </a>
+                                <p>Unplugged</p>
+                            </div>
+                        </div>
+
+                        <!-- Single Album -->
+                        <div class="single-album">
+                            <img src="img/bg-img/a7.jpg" alt="">
+                            <div class="album-info">
+                                <a href="#">
+                                    <h5>Beyonce</h5>
+                                </a>
+                                <p>Songs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Latest Albums Area End ##### -->
+
+  
+
+    
+
+ <!--  ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row d-flex flex-wrap align-items-center">
+                <div class="col-12 col-md-6 text-center" >
+         <!--            <a href="#"><img src="img/core-img/logo.png" alt=""></a> -->
+                    <p class="copywrite-text"><a href="#"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> ArtiSoft 
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                </div>
+
+               
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area Start ##### -->
+
+
+
+
+
+   <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+
+    
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
+    <script src="js/firebaseInit.js"></script>
+    <script src="js/dejarVotar.js"></script>
+    
+</body>
+
 </html>

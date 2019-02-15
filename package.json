@@ -19,16 +19,18 @@
   "homepage": "https://github.com/DamianMoralesM/integrationTest#readme",
   "dependencies": {
     "@google-cloud/firestore": "^0.14.1",
-    "firebase": "^5.0.4",
+    "firebase": "^5.5.6",
+    "firebase-functions": "^2.1.0",
+    "firebase-tools": "^5.1.1",
     "passport": "^0.4.0"
   },
   "devDependencies": {
     "eslint-config-google": "^0.9.1",
-    "express": "^4.16.3",
+    "express": "^4.16.4",
     "htmllint": "^0.7.2",
-    "jasmine": "^3.1.0",
+    "jasmine": "^3.3.0",
     "jshint": "^2.9.5",
     "mustache": "^2.3.0",
-    "nodemon": "^1.17.5"
+    "nodemon": "^1.18.4"
   }
 }
